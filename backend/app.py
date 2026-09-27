@@ -63,7 +63,7 @@ def predict_product():
 
 
 # Define an endpoint for batch prediction (POST request)
-@rental_price_predictor_api.post('/v1/predictbatch')
+@product_selling_predictor_api.post('/v1/predictbatch')
 def predict_rental_price_batch():
     """
     This function handles POST requests to the '/v1/rentalbatch' endpoint.
