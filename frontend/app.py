@@ -39,7 +39,7 @@ Store_Type = st.selectbox(
 Product_Type = st.selectbox(
     "Product Type",
     ['Fruits and Vegetables', 'Snack Foods', 'Frozen Foods', 'Dairy', 'Household', 'Baking Goods', 'Canned', 'Health and Hygiene', 'Meat', 'Soft Drinks', 'Breads', 'Hard Drinks', 'Others', 'Starchy Foods', 'Breakfast', 'Seafood'],
-    index=0 # Default to 'Fruits and Vegetables'
+    index=0 # Default to 'Frozen Foods' (from original payload)
 )
 
 # Create a dictionary payload for the API request
