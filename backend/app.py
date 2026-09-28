@@ -55,9 +55,6 @@ def predict_product():
      if not isinstance(product_data, dict):
          return jsonify({'Error': 'Request body must be a JSON object.'}), 400
 
-     missing_cols = [col for col in required_input_columns if col not in product_data]
-     if missing_cols:
-         return jsonify({'Error': f'Missing required input fields: {missing_cols}'}), 400
 
      # Convert the extracted data into a Pandas DataFrame
      input_df = pd.DataFrame([product_data])
